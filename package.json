@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node js-files/leetcode-problem.js",
-    "dev": "ts-node leetcode-problem.ts",
+    "dev": "ts-node blind75/leetcode-problem.ts",
     "build": "tsc"
   },
   "keywords": [],
