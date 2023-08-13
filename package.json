@@ -1,0 +1,16 @@
+{
+  "name": "blind75",
+  "version": "1.0.0",
+  "description": "LeetCode Blind 75 Problems in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node leetcode-problem.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
