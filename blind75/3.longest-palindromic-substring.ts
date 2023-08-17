@@ -18,7 +18,7 @@ function longestPalindrome(s: string): string {
     return s.slice(resLeft, resRight + 1);
 };
 
-console.log(longestPalindrome('amanaplanacanalpanama'));
+
 
 
 
