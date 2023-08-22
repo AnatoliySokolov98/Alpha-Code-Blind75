@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValid = void 0;
 function isValid(s) {
     const stack = [];
     const opens = '([{';
@@ -27,4 +29,5 @@ function isValid(s) {
     }
     return stack.length === 0;
 }
+exports.isValid = isValid;
 ;

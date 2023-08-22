@@ -1,4 +1,4 @@
-function longestPalindrome(s: string): string {
+export function longestPalindrome(s: string): string {
   let resLeft = 0, resRight = 0;
   function buildPalindrome(left: number, right: number): void {
     while (left >=0 && right < s.length && s[left] == s[right]) {

@@ -1,15 +1,6 @@
+import {ListNode} from './data-structures/linked-list';
 
-  // class ListNode {
-  //     val: number
-  //     next: ListNode | null
-  //     constructor(val?: number, next?: ListNode | null) {
-  //         this.val = (val===undefined ? 0 : val)
-  //         this.next = (next===undefined ? null : next)
-  //     }
-  // }
-
-
-function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
+  export  function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
   const dummy = new ListNode(0, head);
   let fast: ListNode | null = dummy, slow: ListNode | null = dummy;
   while ( n > 0){

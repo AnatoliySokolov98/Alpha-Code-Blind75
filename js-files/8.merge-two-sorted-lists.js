@@ -1,14 +1,9 @@
 "use strict";
-class ListNode {
-    val;
-    next;
-    constructor(val, next) {
-        this.val = (val === undefined ? 0 : val);
-        this.next = (next === undefined ? null : next);
-    }
-}
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.mergeTwoLists = void 0;
+const linked_list_1 = require("./data-structures/linked-list");
 function mergeTwoLists(list1, list2) {
-    const dummy = new ListNode();
+    const dummy = new linked_list_1.ListNode();
     let curr = dummy;
     while (list1 || list2) {
         if (!list1) {
@@ -34,4 +29,5 @@ function mergeTwoLists(list1, list2) {
     }
     return dummy.next;
 }
+exports.mergeTwoLists = mergeTwoLists;
 ;

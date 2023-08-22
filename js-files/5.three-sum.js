@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.threeSum = void 0;
 function threeSum(nums) {
     nums.sort((a, b) => a - b);
     let res = [];
@@ -23,4 +25,5 @@ function threeSum(nums) {
     }
     return res;
 }
+exports.threeSum = threeSum;
 ;

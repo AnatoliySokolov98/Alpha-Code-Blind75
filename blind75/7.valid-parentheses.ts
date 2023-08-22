@@ -1,4 +1,4 @@
-function isValid(s: string): boolean {
+export function isValid(s: string): boolean {
   const stack : string [] = [];
   const opens : string = '([{';
   for(let paren of s) {

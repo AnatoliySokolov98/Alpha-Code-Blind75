@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.longestPalindrome = void 0;
 function longestPalindrome(s) {
     let resLeft = 0, resRight = 0;
     function buildPalindrome(left, right) {
@@ -17,4 +19,5 @@ function longestPalindrome(s) {
     }
     return s.slice(resLeft, resRight + 1);
 }
+exports.longestPalindrome = longestPalindrome;
 ;

@@ -1,15 +1,6 @@
+import {ListNode} from './data-structures/linked-list';
 
-  class ListNode {
-      val: number
-      next: ListNode | null
-      constructor(val?: number, next?: ListNode | null) {
-          this.val = (val===undefined ? 0 : val)
-          this.next = (next===undefined ? null : next)
-      }
-  }
-
-
-  function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
+  export function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
     const dummy = new ListNode();
     let curr = dummy;
     while(list1 || list2) {

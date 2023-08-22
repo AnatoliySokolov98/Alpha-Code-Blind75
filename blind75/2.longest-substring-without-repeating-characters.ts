@@ -1,4 +1,4 @@
-function lengthOfLongestSubstring(s: string): number {
+export function lengthOfLongestSubstring(s: string): number {
   const letters: Set<string> = new Set();
   let res = 0, l = 0;
   for(let r = 0; r < s.length; r++) {

@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.maxArea = void 0;
 function maxArea(height) {
     let left = 0, right = height.length - 1, res = 0;
     while (left < right) {
@@ -10,4 +12,5 @@ function maxArea(height) {
     }
     return res;
 }
+exports.maxArea = maxArea;
 ;

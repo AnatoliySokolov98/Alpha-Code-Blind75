@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.twoSum = void 0;
 function twoSum(nums, target) {
     const obj = {};
     for (let i = 0; i < nums.length; i++) {
@@ -10,4 +12,5 @@ function twoSum(nums, target) {
     }
     return [];
 }
+exports.twoSum = twoSum;
 ;
