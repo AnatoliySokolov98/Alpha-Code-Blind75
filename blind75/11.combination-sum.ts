@@ -1,4 +1,4 @@
-function combinationSum(candidates: number[], target: number): number[][] {
+export function combinationSum(candidates: number[], target: number): number[][] {
   const cache: Record<string, number[][]> = {};
 
   const cacheKey = (index: number, target: number) => `${index}-${target}`;

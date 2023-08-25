@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.combinationSum = void 0;
 function combinationSum(candidates, target) {
     const cache = {};
     const cacheKey = (index, target) => `${index}-${target}`;
@@ -28,3 +30,4 @@ function combinationSum(candidates, target) {
     };
     return dp(0, target);
 }
+exports.combinationSum = combinationSum;

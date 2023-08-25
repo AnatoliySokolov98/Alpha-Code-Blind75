@@ -1,7 +1,7 @@
 /**
  Do not return anything, modify matrix in-place instead.
  */
- function rotate(matrix: number[][]): void {
+ export function rotate(matrix: number[][]): void {
   const SIDE = matrix.length;
   for(let row = 0; row < SIDE; row++) {
     for(let col = 0; col < row; col ++) {

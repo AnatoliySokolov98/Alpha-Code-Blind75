@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.rotate = void 0;
 function rotate(matrix) {
     const SIDE = matrix.length;
     for (let row = 0; row < SIDE; row++) {
@@ -12,4 +14,5 @@ function rotate(matrix) {
         }
     }
 }
+exports.rotate = rotate;
 ;
