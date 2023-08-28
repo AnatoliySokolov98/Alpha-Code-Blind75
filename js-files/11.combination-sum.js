@@ -31,3 +31,4 @@ function combinationSum(candidates, target) {
     return dp(0, target);
 }
 exports.combinationSum = combinationSum;
+console.log(combinationSum([1, 2, 3], 3));
