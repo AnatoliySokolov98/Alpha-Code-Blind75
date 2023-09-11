@@ -1,4 +1,6 @@
 export function combinationSum(candidates: number[], target: number): number[][] {
+
+
   const cache: Record<string, number[][]> = {};
 
   const cacheKey = (index: number, target: number) => `${index}-${target}`;
@@ -36,6 +38,4 @@ export function combinationSum(candidates: number[], target: number): number[][]
   }
   return dp(0, target);
 }
-console.log(combinationSum([1,2,3],3))
-//time O(n*t*150 * (t/ smallest number))
-//space O(n*t*150*(t/smallest number))
+

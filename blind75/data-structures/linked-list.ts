@@ -6,3 +6,15 @@ export class ListNode {
       this.next = (next===undefined ? null : next)
   }
 }
+
+
+
+
+let input: string | number = 'word';
+let inputAsString: string = input as string;
+
+
+
+
+
+console.log(inputAsString);
