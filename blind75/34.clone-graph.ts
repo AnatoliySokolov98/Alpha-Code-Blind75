@@ -7,6 +7,7 @@ export class CheckNode {
       this.neighbors = neighbors;
   }
 }
+
 export function cloneGraph(node: CheckNode | null): CheckNode | null {
     const visited = new Map<CheckNode, CheckNode>();
     function dfs(current: CheckNode | null): CheckNode | null {
