@@ -1,7 +1,8 @@
 import { ListNode } from "./data-structures/linked-list";
 
 export function reorderList(head: ListNode | null): void {
-  let slow: ListNode |null = head, fast: ListNode |null = head.next;
+  let slow: ListNode |null = head
+  let fast: ListNode | null = head ? head.next : null;
   while(fast && fast.next && slow) {
       fast = fast.next.next;
       slow = slow.next;
