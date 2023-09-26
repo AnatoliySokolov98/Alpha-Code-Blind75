@@ -6,7 +6,6 @@ export function numIslands(grid: string[][]): number {
   let islands = 0;
 
   const dfs = (row: number, col: number): void =>{
-
       visited[row][col] = true;
       for(let [r, c] of directions) {
           dfs(row + r, col + c);
@@ -21,8 +20,6 @@ export function numIslands(grid: string[][]): number {
           }
       }
   }
-
   return islands;
-
 };
 
