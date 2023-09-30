@@ -1,9 +1,9 @@
 export class Trie {
   children: Record<string, Trie>
-  word: boolean
+  word: string | null
   constructor() {
       this.children = {};
-      this.word = false;
+      this.word = null;
   }
 
   insert(word: string): void {
@@ -14,7 +14,7 @@ export class Trie {
           }
           node = node.children[char];
       }
-      node.word = true;
+      node.word = word;
   }
   search(word: string): boolean {
       let node: Trie = this;
@@ -24,7 +24,7 @@ export class Trie {
           }
           node = node.children[char];
       }
-      return node.word;
+      return node.word !== null ;
   }
 
   startsWith(prefix: string): boolean {

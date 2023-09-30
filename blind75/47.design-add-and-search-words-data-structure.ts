@@ -10,7 +10,7 @@ export class WordDictionary {
               node.children[char] = new Trie();
           node = node.children[char];
       }
-      node.word = true;
+      node.word = word;
   }
 
   search(word: string, index: number = 0, node: Trie = this.root): boolean {
@@ -28,7 +28,7 @@ export class WordDictionary {
           else
               node = node.children[char];
       }
-      return node.word;
+      return node.word !== null;
   }
 }
 
