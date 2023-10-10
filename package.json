@@ -16,6 +16,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@datastructures-js/priority-queue": "^6.3.0",
     "priority-queue-ts": "^0.4.1",
     "priorityqueuejs": "^2.0.0",
     "queue-priority": "^1.0.0",
