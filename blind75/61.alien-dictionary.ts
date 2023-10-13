@@ -4,7 +4,7 @@ export function alienOrder(words: string[]): string {
   const letters: Record<string, [Set<string>, number]> = {};
 
   // Initialize letters with all unique characters from words
-  for(let i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
       for(let j = 0; j < words[i].length; j++) {
           if(!Object.hasOwn(letters, words[i][j]))
             letters[words[i][j]] = [new Set(), 0];
@@ -12,23 +12,19 @@ export function alienOrder(words: string[]): string {
   }
 
   // Identify direct succession relationships between characters based on words order
-  for(let i = 0; i < words.length - 1; i++) {
+  for (let i = 0; i < words.length - 1; i++) {
       for(let j = 0; j < words[i].length; j++) {
           // Return an empty string if a prefix of a word comes after the word itself
           if (j >= words[i + 1].length)
               return '';
           const [firstLetter, secondLetter] = [words[i][j], words[i+1][j]];
-          if(firstLetter === secondLetter)
+          if (firstLetter === secondLetter)
             continue;
 
-          // If already recorded this succession, stop checking this pair of words
-          if (letters[firstLetter][0].has(secondLetter)) {
-              break;
-          }
-          else {
-              // Record the succession relationship and increment the predecessor count
-              letters[firstLetter][0].add(secondLetter);
-              letters[secondLetter][1]++;
+          // If new word lets add dependency
+          if (!letters[firstLetter][0].has(secondLetter)) {
+            letters[firstLetter][0].add(secondLetter);
+            letters[secondLetter][1]++;
           }
           break;
       }
