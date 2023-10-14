@@ -1,12 +1,12 @@
 import { MinPriorityQueue, MaxPriorityQueue } from '@datastructures-js/priority-queue';
 
 
-class MedianFinder {
+export class MedianFinder {
     minQ: MinPriorityQueue<number>;
     maxQ: MaxPriorityQueue<number>;
     constructor() {
-      this.minQ = new MinPriorityQueue();
-      this.maxQ = new MaxPriorityQueue();
+      this.minQ = new MinPriorityQueue<number>();
+      this.maxQ = new MaxPriorityQueue<number>();
     }
 
     addNum(num: number): void {
@@ -33,4 +33,3 @@ class MedianFinder {
 }
 
 
- 
