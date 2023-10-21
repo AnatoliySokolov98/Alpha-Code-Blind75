@@ -1,18 +1,18 @@
-const sum = (a: number, b: number): number => {
+export const sum = (a: number, b: number): number => {
   while (b) {
     [a, b] = [a ^ b, (a & b) << 1];
   }
   return a;
 };
 
-const difference = (a: number, b: number): number => {
+export const difference = (a: number, b: number): number => {
   while (b) {
     [a,b] = [a ^ b, (~a & b) << 1];
   }
   return a;
 };
 
-function getSum(a: number, b: number): number {
+export function getSum(a: number, b: number): number {
 if(a < 0) {
     if(b < 0) {
         return -sum(-a, -b);
