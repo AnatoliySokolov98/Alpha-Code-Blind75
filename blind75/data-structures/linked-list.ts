@@ -10,11 +10,3 @@ export class ListNode {
 
 
 
-let input: string | number = 'word';
-let inputAsString: string = input as string;
-
-
-
-
-
-console.log(inputAsString);
