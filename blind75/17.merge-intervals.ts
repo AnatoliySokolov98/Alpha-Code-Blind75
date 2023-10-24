@@ -16,5 +16,3 @@ function merge(intervals: number[][]): number[][] {
 
 };
 
-//time O(nlogn)
-//space O(1)
