@@ -10,6 +10,3 @@ class ListNode {
     }
 }
 exports.ListNode = ListNode;
-let input = 'word';
-let inputAsString = input;
-console.log(inputAsString);

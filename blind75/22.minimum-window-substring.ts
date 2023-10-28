@@ -41,5 +41,3 @@ export function minWindow(s: string, t: string): string {
   return res[1] === Infinity ? '' : s.slice(res[0], res[1] + 1);
 };
 
-// time O(t + s)
-// space O(1)
