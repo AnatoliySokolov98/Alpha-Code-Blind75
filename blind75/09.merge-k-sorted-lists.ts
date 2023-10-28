@@ -1,6 +1,6 @@
 // Definition for singly-linked list.
 import {ListNode} from './data-structures/linked-list';
-import{mergeTwoLists} from './8.merge-two-sorted-lists';
+import{mergeTwoLists} from './08.merge-two-sorted-lists';
 
 export function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   let interval = 1;
