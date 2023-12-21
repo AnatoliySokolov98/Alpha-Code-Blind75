@@ -29,3 +29,11 @@ Example:
 `ts-node blind75/1.two-sum.ts`
 
 This setup allows you to work on LeetCode Blind 75 Problems in TypeScript efficiently.
+
+## Contributing
+
+### Clone the repo
+
+### Submit a pull request
+
+Fork the repo and open a pull request to the main branch.
